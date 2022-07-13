@@ -20,7 +20,7 @@ val_datas, val_labels = load_data(path=val_path)
 print(f"Total valid sample: {len(val_datas)}")
 
 
-train_data = NERData(train_datas[0:148], train_labels[0:148])
+train_data = NERData(train_datas, train_labels)
 val_data = NERData(val_datas, val_labels)
 
 train_dl = DataLoader(dataset=train_data, batch_size=hparams.batch_size, shuffle=True)

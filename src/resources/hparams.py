@@ -3,12 +3,12 @@ batch_size=64
 max_sent_length = 64
 nb_labels=11
 hidden_dim=256
-max_epoch = 1
+max_epoch = 100
 dropout=0.1
 lr = 0.0001
 
 result_path="results/f1_%EPOCH%.txt"
-best_checkpoint_path = "checkpoint/checkpoint30.pt"
+best_checkpoint_path = "checkpoint/checkpoint57.pt"
 checkpoint_path="checkpoint/checkpoint_%EPOCH%.pt"
 
 word2index_path="src/resources/vocab/word2index.json"
