@@ -1,22 +1,24 @@
-# ner-bilstm-crf
-- lib:
+## Named Entity Recognition
+- Model Architecture:
+  + Pretrained Word Embedding + BiLSTM + CRF
+
+- Library:
   + pytorch
   + tqdm
   + numpy
   + gensim
-- data : vlsp 2016:
-  + number of sentence : 18060 
   
-- Kết quả thử nghiệm:  
-  - Tập test (50 epoch): F1 = tensor(0.9688)
-    + '<pad>': tensor(nan), 
-    + '<s>': tensor(0.6666), 
-    + '</s>': tensor(0.9997), 
-    + 'O': tensor(0.9952), 
-    + 'B-LOC': tensor(0.8889), 
-    + 'B-ORG': tensor(0.6889), 
-    + 'I-LOC': tensor(0.8656), 
-    + 'B-PER': tensor(0.8277), 
-    + 'I-ORG': tensor(0.7631), 
-    + 'B-MISC': tensor(0.9841), 
-    + 'I-MISC': tensor(0.9333)}
+- Data : 
+  + VLSP 2016
+  
+# Kết quả thử nghiệm:  
+Model | precision	 | recall | F1-score
+---|---|---|---
+`LOC` | 0.88 | 0.91 | 0.89 
+`MISC` | 0.94 | 0.94 | 0.94 
+`ORG` | 0.75 | 0.58 | 0.65 
+`PER` | 0.87 | 0.81 | 0.84
+---|---|---|---
+`micro avg` | 0.87 | 0.82 | 0.84
+`macro avg` | 0.86 | 0.81 | 0.83
+`weighted avg` | 0.86 | 0.82 | 0.84
