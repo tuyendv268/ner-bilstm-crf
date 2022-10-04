@@ -1,14 +1,14 @@
 ### Named Entity Recognition
-# - Model Architecture:
+## Model Architecture:
   + Pretrained Word Embedding + BiLSTM + CRF
 
-# - Library:
+## Library:
   + pytorch
   + tqdm
   + numpy
   + gensim
   
-# - Data : 
+## Data : 
   + VLSP 2016
   
 ## Kết quả thử nghiệm:  
