@@ -1,4 +1,4 @@
-### Named Entity Recognition
+## Named Entity Recognition
 #### Model Architecture:
   + Pretrained Word Embedding + BiLSTM + CRF
 
